@@ -3,13 +3,16 @@
 
 <head>
     <meta charset="utf-8">
-    <title>FASTER - Logistics Company Website Template</title>
+    <title>KETAR - Logistics</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <!-- <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description"> -->
 
     <!-- Favicon -->
-    <link href="img/favicon.ico" rel="icon">
+    <link href="img\Faster logo\Asset 1@0.5x.png" rel="icon">
+    <link rel = "icon" href = 
+    "img\Faster logo\Asset 1@0.5x.png" 
+            type = "image/x-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,6 +26,25 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+        /* Style for the hidden content */
+        .hidden-content {
+            display: none;
+        }
+    
+    /* horizontal alignment for the services offered  */
+        .containers {
+                display: flex; /* Use flexbox */
+                justify-content: center; /* Center the divs within the container */
+            }
+    
+            .box {
+                width: 100px; /* Set a width for each div */
+                height: 100px;
+                background-color: #f0f0f0;
+                margin: 5px; /* Add some space between the divs */
+            }
+    </style>
 </head>
 
 <body>
@@ -31,9 +53,9 @@
         <div class="row py-2 px-lg-5">
             <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center text-white">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</small>
+                    <small><i class="fa fa-phone-alt mr-2"></i>+17758644080</small>
                     <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>info@example.com</small>
+                    <small><i class="fa fa-envelope mr-2"></i>ketarLogistics@yahoo.com</small>
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
@@ -64,16 +86,16 @@
     <div class="container-fluid p-0">
         <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
             <a href="index.html" class="navbar-brand ml-lg-3">
-                <h1 class="m-0 display-5 text-uppercase text-primary"><i class="fa fa-truck mr-2"></i>Faster</h1>
+                <h1 class="m-0 display-5 text-uppercase text-primary"><i class="fa fa-truck mr-2"></i>ketar logistics</h1>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
                 <div class="navbar-nav m-auto py-0">
-                    <a href="index.html" class="nav-item nav-link">Home</a>
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
                     <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link active">Service</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
                     <a href="price.html" class="nav-item nav-link">Price</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -107,43 +129,116 @@
 
     <!-- Services Start -->
     <div class="container-fluid pt-5">
-        <div class="container">
+        <div class=>
             <div class="text-center pb-2">
                 <h6 class="text-primary text-uppercase font-weight-bold">Our Services</h6>
                 <h1 class="mb-4">Best Logistic Services</h1>
             </div>
             <div class="row pb-3">
-                <div class="col-lg-3 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
-                        <i class="fa fa-2x fa-plane text-dark pr-3"></i>
-                        <h6 class="text-white font-weight-medium m-0">Air Freight</h6>
+
+
+                <div class="containers" >
+                    <div class="col-lg-3 col-md-6 text-center mb-5">
+                        <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                            <i class="fa fa-2x fa-plane text-dark pr-3"></i>
+                            <h6 class="text-white font-weight-medium m-0">Air Freight</h6>
+                        </div>
+                        <div class="read-more-container">
+                            <p class="content">
+                                KETAR provides logistics solutions to solve shipping challenges and connect with customers to reach new markets.
+                            </p>
+                            <div class="hidden-content read-more-container">
+                                <p>
+                                    
+                                </p>
+                            </div>
+                            <button class="read-more">Read More</button>
+                        </div>
                     </div>
-                    <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet diam sea est diam</p>
-                    <a class="border-bottom text-decoration-none" href="">Read More</a>
+
+
+                    <div class="col-lg-3 col-md-6 text-center mb-5">
+                        <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                            <i class="fa fa-2x fa-ship text-dark pr-3"></i>
+                            <h6 class="text-white font-weight-medium m-0">Ocean Freight</h6>
+                        </div>
+                        <div class="read-more-container">
+                            <p class="content">
+                                Whatever your requirement, we will develop a plan that will ensure your products reach your customers’ 
+                                seamlessly. We use combination of services to create Individual solutions, Everytime
+                            </p>
+                            <div class="hidden-content read-more-container">
+                                <p>
+                                    
+                                </p>
+                            </div>
+                            <button class="read-more">Read More</button>
+                        </div>
+                    </div>
+    
+    
+                    <div class="col-lg-3 col-md-6 text-center mb-5">
+                        <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                            <i class="fa fa-2x fa-truck text-dark pr-3"></i>
+                            <h6 class="text-white font-weight-medium m-0">Land Transport</h6>
+                        </div>
+                        <div class="read-more-container">
+                            <p class="content">
+                                we offer services like freight brokerage, less than truckload (LTL), full truckload (FTL), 
+                                pool distribution, dedicated carriers, and freight consolidation to clients across
+                            </p>
+                            <div class="hidden-content read-more-container">
+                                <p>
+                                    the continental United States. To offer all these services, our warehouses are well equipped with industry-recognized, 
+                                    modern machinery and trained staff to carry out the procedures efficiently. All of our privately owned trucks 
+                                    are less than three years old, ensuring breakdowns are avoided while your products are waiting for delivery. 
+                                    KETAR Logistics offers the reliability and security of a private fleet without the expansive costs.
+                                </p>
+                            </div>
+                            <button class="read-more">Read More</button>
+                        </div>
+                    </div>
+    
+    
+                    <div class="col-lg-3 col-md-6 text-center mb-5">
+                        <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
+                            <i class="fa fa-2x fa-store text-dark pr-3"></i>
+                            <h6 class="text-white font-weight-medium m-0">Cargo Storage</h6>
+                        </div>
+                        <div class="read-more-container">
+                            <p class="content">
+                                Our flexible storage space offers customizable plans according to our clients’ warehousing requirements during different seasons.
+                            </p>
+                            <div class="hidden-content read-more-container">
+                                <p>
+                                    Our flexible warehouse space handles the peaks and valleys in your specific industry and offers flexible pay scales such as weekly or 
+                                    monthly so you aren’t paying for storage you don’t need.
+                                    Warehousing can be as tough as dealing with a high seasonal demand. Utilizing our flex warehouse space during such high demand 
+                                    seasons empowers you to maintain your focus towards your main business. Along with flexible storage space, we also provide 
+                                    packaging, distribution, and transportation during the increased sales season to help align your goals all in one location. 
+                                    Our flexible storage space is flexible enough to handle any unpredictable demands.
+                                </p>
+                            </div>
+                            <button class="read-more">Read More</button>
+                        </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
-                        <i class="fa fa-2x fa-ship text-dark pr-3"></i>
-                        <h6 class="text-white font-weight-medium m-0">Ocean Freight</h6>
-                    </div>
-                    <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet diam sea est diam</p>
-                    <a class="border-bottom text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
-                        <i class="fa fa-2x fa-truck text-dark pr-3"></i>
-                        <h6 class="text-white font-weight-medium m-0">Land Transport</h6>
-                    </div>
-                    <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet diam sea est diam</p>
-                    <a class="border-bottom text-decoration-none" href="">Read More</a>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center mb-5">
-                    <div class="d-flex align-items-center justify-content-center bg-primary mb-4 p-4">
-                        <i class="fa fa-2x fa-store text-dark pr-3"></i>
-                        <h6 class="text-white font-weight-medium m-0">Cargo Storage</h6>
-                    </div>
-                    <p>Diam amet eos at no eos sit lorem, amet rebum ipsum clita stet diam sea est diam</p>
-                    <a class="border-bottom text-decoration-none" href="">Read More</a>
+
+
+                    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                    <script>
+                        // jQuery function to toggle the visibility of hidden content
+                        $(document).ready(function() {
+                            $('.read-more').click(function() {
+                                var $container = $(this).closest('.read-more-container');
+                                var $hiddenContent = $container.find('.hidden-content');
+                
+                                $hiddenContent.slideToggle();
+                                $(this).text(function(i, text) {
+                                    return text === 'Read More' ? 'Read Less' : 'Read More';
+                                });
+                            });
+                        });
+                    </script>
                 </div>
             </div>
         </div>
@@ -158,7 +253,14 @@
                 <div class="col-lg-7 py-5 py-lg-0">
                     <h6 class="text-primary text-uppercase font-weight-bold">Get A Quote</h6>
                     <h1 class="mb-4">Request A Free Quote</h1>
-                    <p class="mb-4">Dolores lorem lorem ipsum sit et ipsum. Sadip sea amet diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet dolor sed sit et sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
+                    <p class="mb-4">Thank you for contacting us! 
+                        Please use the form to ask us a question, request info about our service or get a quote by sending a link to the item 
+                        or item number(s) you are interested in.
+                        Once we receive your contact request we aim to reply to customers within 2 business days. 
+                        If you haven't received a quote in that time and have checked your spam folder 
+                        please email us at ketarLogistics@yahoo.com for an update.Thank you!  
+                        <br>
+                        **If you are having any issues submitting a form please email us directly at ketarLogistics@yahoo.com</p></p>
                     <div class="row">
                         <div class="col-sm-4">
                             <h1 class="text-primary mb-2" data-toggle="counter-up">225</h1>
@@ -186,9 +288,10 @@
                             <div class="form-group">
                                 <select class="custom-select border-0 px-4" style="height: 47px;">
                                     <option selected>Select A Service</option>
-                                    <option value="1">Service 1</option>
-                                    <option value="2">Service 1</option>
-                                    <option value="3">Service 1</option>
+                                    <option value="1">Air Freight</option>
+                                    <option value="2">Ocean Freight</option>
+                                    <option value="3">Land Transport</option>
+                                    <option value="3">Cargo Storage</option>
                                 </select>
                             </div>
                             <div>
@@ -216,44 +319,59 @@
                     <div class="d-flex align-items-center mb-3">
                         <img class="img-fluid rounded-circle" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" alt="">
                         <div class="ml-3">
-                            <h6 class="font-weight-semi-bold m-0">Client Name</h6>
-                            <small>- Profession</small>
+                            <h6 class="font-weight-semi-bold m-0">Donovan Webster</h6>
+                            <small>-</small>
                         </div>
                     </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr clita lorem. Dolor ipsum sanct clita</p>
+                    <p class="m-0">“Our drill is currently in Las Palmas for its SPS, and this critical shipment was required to meet the rig 
+                        before it departed back to Guyana at the end of July. Due to the size, our only option was to ship it using sea freight, 
+                        and KATER came through again! The Project Cargo team was able to book, coordinate, and provide constant communication 
+                        to make sure we met our deadline, all in a 10-hour window! Honestly, I was not sure we were going to make it, 
+                        but they turned it around! Impressed is an understatement.”</p>
                 </div>
                 <div class="position-relative bg-secondary p-4">
                     <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
                     <div class="d-flex align-items-center mb-3">
                         <img class="img-fluid rounded-circle" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" alt="">
                         <div class="ml-3">
-                            <h6 class="font-weight-semi-bold m-0">Client Name</h6>
-                            <small>- Profession</small>
+                            <h6 class="font-weight-semi-bold m-0">Elliott Diaz</h6>
+                            <small>-</small>
                         </div>
                     </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr clita lorem. Dolor ipsum sanct clita</p>
+                    <p class="m-0">“I wanted to let you know the extra lengths that FASTER Logistics has gone to help me ship out a critical ocean shipment 
+                        for our customer in South Africa.  Per the vessel schedule, last weekend was the final weekend we could get the $1.1M container 
+                        out of our warehouse in Plainfield to make the vessel and deliver to the customer before quarter end.  With the challenges at our 
+                        warehouses, the KATER team stayed up until 11:30 pm on Friday and continued working Saturday with me and the warehouse to finalize the 
+                        export documentation. This was the true definition of your team putting the “CATER” in logistics. Thank you so much!”</p>
                 </div>
                 <div class="position-relative bg-secondary p-4">
                     <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
                     <div class="d-flex align-items-center mb-3">
                         <img class="img-fluid rounded-circle" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" alt="">
                         <div class="ml-3">
-                            <h6 class="font-weight-semi-bold m-0">Client Name</h6>
-                            <small>- Profession</small>
+                            <h6 class="font-weight-semi-bold m-0">Hunter Edwards</h6>
+                            <small>-</small>
                         </div>
                     </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr clita lorem. Dolor ipsum sanct clita</p>
+                    <p class="m-0">I wanted to let you know that we are really glad we reached out to you guys to help with getting products 
+                        in from Germany. Your team has done a phenomenal job for us, starting from the moment I reached out to you. 
+                        KATER Logistics’s level of communication and overall performance has been excellent throughout the entire process.
+                        Thank you so much! We will definitely be coming to you guys for this kind of thing and other opportunities in the future.</p>
                 </div>
                 <div class="position-relative bg-secondary p-4">
                     <i class="fa fa-3x fa-quote-right text-primary position-absolute" style="top: -6px; right: 0;"></i>
                     <div class="d-flex align-items-center mb-3">
                         <img class="img-fluid rounded-circle" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" alt="">
                         <div class="ml-3">
-                            <h6 class="font-weight-semi-bold m-0">Client Name</h6>
-                            <small>- Profession</small>
+                            <h6 class="font-weight-semi-bold m-0">Spencer Nelson</h6>
+                            <small>-</small>
                         </div>
                     </div>
-                    <p class="m-0">Sed ea amet kasd elitr stet, stet rebum et ipsum est duo elitr clita lorem. Dolor ipsum sanct clita</p>
+                    <p class="m-0">Glad we are associated with KATER Logistics! As a new customer, we are very happy with the outstanding 
+                        service provided. Compared to the big forwarding companies, your service was so prompt, efficient, and personalized. 
+                        Every single detail was taken care of from beginning to end. Wilson was a pleasure to work with and was outstanding 
+                        with follow-up. He was efficient and very organized, keeping communication open between our office, vendors, 
+                        and all the warehouses involved. Looking forward to many more shipments with FL</p>
                 </div>
             </div>
         </div>
@@ -269,8 +387,8 @@
                     <div class="col-md-6 mb-5">
                         <h3 class="text-primary mb-4">Get In Touch</h3>
                         <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
-                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+17758644080</p>
+                        <p><i class="fa fa-envelope mr-2"></i>ketarLogistics@yahoo.com</p>
                         <div class="d-flex justify-content-start mt-4">
                             <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -292,7 +410,9 @@
             </div>
             <div class="col-lg-5 col-md-6 mb-5">
                 <h3 class="text-primary mb-4">Newsletter</h3>
-                <p>Rebum labore lorem dolores kasd est, et ipsum amet et at kasd, ipsum sea tempor magna tempor. Accu kasd sed ea duo ipsum. Dolor duo eirmod sea justo no lorem est diam</p>
+                <p>Subscribe to our Newsletter  where you will find our latest service, 
+                    development and rapid change in the industry. You can subscribe to "KETAR Logistics Newsletter"  
+                    here from below:</p>
                 <div class="w-100">
                     <div class="input-group">
                         <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
@@ -307,10 +427,10 @@
     <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: #3E3E4E !important;">
         <div class="row">
             <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
-                <p class="m-0 text-white">&copy; <a href="#">Your Site Name</a>. All Rights Reserved. 
+                <p class="m-0 text-white">Copyright &copy; <a href="#"> KETAR Logistics</a>. All Rights Reserved. 
 				
 				<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-				Designed by <a href="https://htmlcodex.com">HTML Codex</a>
+				 <a href="https://htmlcodex.com"></a>
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
