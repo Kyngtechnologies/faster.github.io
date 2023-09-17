@@ -1,3 +1,53 @@
+// package tracking 
+function trackPackage() {
+    const apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiIwOTY1OWRiMC01MzY5LTExZWUtODBmNi04YmMwNzdiNTViMDAiLCJzdWJJZCI6IjY1MDNiNjVjM2RhNDYyNjgzOTE5MmUzZiIsImlhdCI6MTY5NDc0MjEwOH0.5Wx-XTO3_9kLGOR_QgnLCT3BjUt5mu3J6Ci1XglGyYQ'; // Replace with your actual API key
+    const trackingUrl = 'https://parcelsapp.com/api/v3/shipments/tracking';
+    
+    const trackingNumber = document.getElementById("trackingNumber").value;
+    
+    const shipments = [{
+        trackingId: trackingNumber,
+        language: 'en',
+        country: 'United States'
+    }];
+
+    $.post({
+        url: trackingUrl,
+        data: JSON.stringify({ apiKey: apiKey, shipments: shipments }),
+        contentType: 'application/json',
+        success: (response) => {
+            const uuid = response.uuid;
+
+            const checkTrackingStatus = () => {
+                $.get({
+                    url: `${trackingUrl}?apiKey=${apiKey}&uuid=${uuid}`,
+                    success: (statusResponse) => {
+                        if (statusResponse.done) {
+                            document.getElementById("packageInfo").innerHTML = 'Tracking complete';
+                        } else {
+                            document.getElementById("packageInfo").innerHTML = 'Tracking in progress...';
+                            setTimeout(checkTrackingStatus, 1000);
+                        }
+                    },
+                    error: (err) => {
+                        console.error(err);
+                    }
+                });
+            }
+
+            checkTrackingStatus();
+        },
+        error: (err) => {
+            console.error(err);
+        }
+    });
+}
+
+
+
+
+
+
 (function ($) {
     "use strict";
 

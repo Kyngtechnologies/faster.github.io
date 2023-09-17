@@ -30,8 +30,20 @@
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <!-- <link href="css/theme.css" rel="stylesheet"> -->
 
 	<script type="text/javascript" src="//s.tracktry.com/tracktry/js/button/button.js"></script>
+<script type="text/javascript">
+function TTsizeSet() {
+    return {
+        //Optional, Specify Single number input size, large or normal, default normal.
+        size:"normal",
+        //Optional, Specify Single number input width, e.g. 400px,75%, default 75%.
+        width:"75%"
+    };
+}
+</script>
+<script type="text/javascript" src="//s.tracktry.com/tracktry/js/button/button.js"></script>
 <script type="text/javascript">
 function TTsizeSet() {
     return {
@@ -122,6 +134,24 @@ function TTsizeSet() {
                         </div>
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <div>
+                        <div class="dropdown d-none d-lg-block">+
+                            <button class="btn bg-soft-warning ms-2" id="dropdownMenuButton1" type="submit" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-search text-warning">
+
+                                </i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg-end p-0 rounded" aria-labelledby="dropdownMenuButton1" style="top:55px">
+                              <form>
+                                <input class="form-control border-200" type="search" placeholder="Search" aria-label="Search" style="background:#FDF1DF;" />
+                              </form>
+                            </div>
+                          </div>
+                          <form class="d-flex my-3 d-block d-lg-none">
+                            <input class="form-control me-2 border-200 bg-light" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-primary" type="submit">Search</button>
+                          </form>
+                    </div>
                 </div>
                 <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Get A Quote</a>
             </div>
@@ -136,7 +166,13 @@ function TTsizeSet() {
             <h1 class="text-primary mb-4">Safe & Faster</h1>
             <h1 class="text-white display-3 mb-5">Logistics Services</h1>
             <div class="mx-auto" style="width: 100%; max-width: 600px;">
-                        <a  href="https://www.tracktry.com/t/faster"><button class="btn btn-primary px-3"> Track & Trace</button></a>
+                        <!-- <a  href="https://www.tracktry.com/t/faster"><button class="btn btn-primary px-3"> Track & Trace</button></a> -->
+                        <div id="TTinput" class="TTinput">
+                            <div class="TTinput-item">
+                                <input id="TTtracknumber" type="text" value="" name="TTtracknumber" placeholder="Enter your tracking number">
+                            </div>
+                            <button class="TTinput-button" onclick="TTbuttonToTrack()">Track</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -781,6 +817,40 @@ function TTsizeSet() {
         </div>
     </div>
     <!-- Footer End -->
+
+
+        <!-- floating whats app button start-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=9045064293" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float">
+
+    </i>
+    </a>
+
+    <style>
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	/* right:40px; */
+    left: 14px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+    </style>
+    <!-- floating whats app button End-->
 
 
     <!-- Back to Top -->
