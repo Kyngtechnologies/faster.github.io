@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta charset="utf-8">
+    <title>Track Shipment</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <!-- Favicon -->
+    <link href="img\Faster logo\Asset 1@0.5x.png" rel="icon">
+    <link rel = "icon" href = 
+    "img\Faster logo\Asset 1@0.5x.png" 
+            type = "image/x-icon">
+    
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e191163167.js" crossorigin="anonymous"></script>
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel='stylesheet' href='css/trackstyle.css'>
+	<script type="text/javascript" src="js/button.js"></script>
+<script type="text/javascript">
+function TTsizeSet() {
+    return {
+        //Optional, Specify Single number input size, large or normal, default normal.
+        size:"normal",
+        //Optional, Specify Single number input width, e.g. 400px,75%, default 75%.
+        width:"75%"
+    };
+}
+</script>
+</script>
+<style>
+    /* Style for the hidden content */
+    .hidden-content {
+        display: none;
+    }
+
+/* horizontal alignment for the services offered  */
+    .containers {
+            display: flex; /* Use flexbox */
+            justify-content: center; /* Center the divs within the container */
+        }
+
+        .box {
+            width: 100px; /* Set a width for each div */
+            height: 100px;
+            background-color: #f0f0f0;
+            margin: 5px; /* Add some space between the divs */
+        }
+</style>
+<link rel='stylesheet' href='css/trackstyle.css'>
+</head>
+
+<body style="background-image: url('img/5.jpg'); ">
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark">
+        <div class="row py-2 px-lg-5">
+            <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center text-white">
+                    <small><i class="fa fa-phone-alt mr-2"></i>+17758644080</small>
+                    <small class="px-3">|</small>
+                    <small><i class="fa fa-envelope mr-2"></i>ketarLogistics@yahoo.com</small>
+                </div>
+            </div>
+            <div class="col-lg-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-white px-2" href="">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-white pl-2" href="">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+            <a href="index.html" class="navbar-brand ml-lg-3">
+                <h1 class="m-0 display-5 text-uppercase text-primary"><i class="fa fa-truck mr-2"></i>ketar logistics</h1>
+            </a>
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-between px-lg-3" id="navbarCollapse">
+                <div class="navbar-nav m-auto py-0">
+                    <a href="index.html" class="nav-item nav-link active">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="service.html" class="nav-item nav-link">Service</a>
+                    <a href="price.html" class="nav-item nav-link">Price</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                        <div class="dropdown-menu rounded-0 m-0">
+                            <a href="blog.html" class="dropdown-item">Blog Grid</a>
+                            <a href="single.html" class="dropdown-item">Blog Detail</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                    <div>
+                        <!-- <div class="dropdown d-none d-lg-block">+
+                            <button class="btn bg-soft-warning ms-2" id="dropdownMenuButton1" type="submit" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fas fa-search text-warning">
+
+                                </i> -->
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg-end p-0 rounded" aria-labelledby="dropdownMenuButton1" style="top:55px">
+                            <form>
+                                <input class="form-control border-200" type="search" placeholder="Search" aria-label="Search" style="background:#FDF1DF;" />
+                            </form>
+                            </div>
+                        </div>
+                        <form class="d-flex my-3 d-block d-lg-none">
+                            <input class="form-control me-2 border-200 bg-light" type="search" placeholder="Search" aria-label="Search" />
+                            <button class="btn btn-outline-primary" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+                <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Get A Quote</a>
+            </div>
+        </nav>
+    </div>
+<!-- Navbar End -->
+
+<header id="header" class="header header-transparent">
+    <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+
+</header><!-- /.Header -->
+
+
+<section id="page-title" class="page-title bg-overlay bg-parallax">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+                <h1 class="pagetitle__heading" style="color: #FF4800;">Tracking</h1>
+
+<div class="table-responsive">
+
+<div class="container">
+    <article class="card">
+        <header class="card-header" style="background-color:#FF4800;"> My Orders / Tracking </header>
+
+        <div class="card-body">
+            <h6>Order ID: </h6>
+            <article class="card">
+                <div class="card-body row">
+                    <div class="col" style="color:black;"> <strong>Estimated Delivery time:</strong> <br> </div>
+                    <div class="col" style="color:black;"> <strong>Shipping BY:</strong> <br> Skylimitdelivery </div>
+                    <div class="col" style="color:black;"> <strong>Status:</strong> <br>  </div>
+                    <div class="col" style="color:black;"> <strong>Tracking #:<div id="trackingInfo"></div></strong> <br>  </div>
+                </div>
+            </article>
+</div>
+<div class="alert alert-info" style="background-color:black;"></div>
+<div class="container">
+<div class="alert alert-info" style="background-color:#FF4800;">RECEIPENT INFORMATION</div>
+
+          <ul class="list-unstyled">
+            <li style="color:black;">Name: </li>
+            <li style="color:black;">Email: </li>
+            <li style="color:black;">Phone: </li>
+             <li style="color:black;">Address: </li>
+</ul>
+<div class="alert alert-info" style="background-color:#FF4800;">SENDER INFORMATION</div>
+<ul class="list-unstyled">
+    <li style="color:black;">Name: </li>
+  <li style="color:black;">Email: </li>
+  <li style="color:black;">Phone: </li>
+   <li style="color:black;">Address: </li>
+</ul>
+<div class="alert alert-info" style="background-color:#FF4800;">ITEMS DESCRIPTION</div>
+                 <ul class="list-unstyled">
+  <li style="color:black;">Item description: </li>
+  <li style="color:black;">Number of items: </li>
+  <li style="color:black;">Shipping Cost: </li>
+  
+</ul>
+<div class="alert alert-info" style="background-color:#FF4800;">LOCATION INFORMATION</div>
+<ul class="list-unstyled">
+    <li style="color:green;">Current Location: </li>
+ <li style="color:red;">Destination: </li>
+  <li style="color:black;">Sending Date: </li>
+  <li style="color:black;">Estimated Delivery Date: </li>
+</ul>
+<div class="alert alert-info" style="background-color:#FF4800;">STATUS</div>
+
+                  
+<ul class="list-unstyled">
+    <li style="color:black;">&#9654;&#9654;&#9654;&#9654;&#9654;Shipped by Skylimitdelivery</li>
+  
+  </li>
+</ul>
+<style>
+    
+	
+		
+</style>
+     <article class="card">
+	<div class="container">
+		<div class="card-title">
+		 
+		</div>
+		<div class="card-body">
+			<div class="payment-type">
+				<h4>Acceptable Payment Method</h4>
+				<div class="types flex justify-space-between">
+					<div class="type selected">
+						<div class="logo">
+							<i class="fa fa-bitcoin"></i>
+						</div>
+						<div class="text">
+							<p style="color:black;">Pay with Bitcoin</p>
+						</div>
+					</div>
+					<div class="type">
+						<div class="logo">
+							<i class="fa fa-money"></i>
+						</div>
+						<div class="text">
+							<p style="color:black;" >Pay with Cash</p>
+						</div>
+					</div>
+					<div class="type">
+						<div class="logo">
+							<i class="fa fa-money"></i>
+						</div>
+						<div class="text">
+							<p style="color:black;" >Pay with Wire transfer</p>
+						</div>
+					</div>
+				</div>
+			</div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      </div>
+          </div><!-- /.col-lg-8 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section><!-- /.Track Shipmeent -->
+
+
+<!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-7 col-md-6">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h3 class="text-primary mb-4">Get In Touch</h3>
+                        <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+17758644080</p>
+                        <p><i class="fa fa-envelope mr-2"></i>ketarLogistics@yahoo.com</p>
+                        <div class="d-flex justify-content-start mt-4">
+                            <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                            <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a class="btn btn-outline-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-5">
+                        <h3 class="text-primary mb-4">Quick Links</h3>
+                        <div class="d-flex flex-column justify-content-start">
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Home</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+                            <a class="text-white mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Pricing Plan</a>
+                            <a class="text-white" href="#"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Newsletter</h3>
+                <p>Subscribe to our Newsletter  where you will find our latest service, 
+                    development and rapid change in the industry. You can subscribe to "KETAR Logistics Newsletter"  
+                    here from below:</p>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 30px;" placeholder="Your Email Address">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-4">Sign Up</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5" style="border-color: #3E3E4E !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white">Copyright &copy; <a href="#"> KETAR Logistics</a>. All Rights Reserved. 
+				
+				<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+				 <a href="https://htmlcodex.com"></a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <ul class="nav d-inline-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Privacy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Terms</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">FAQs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white py-0" href="#">Help</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+        <!-- floating whats app button start-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=9045064293" class="float" target="_blank">
+    <i class="fa fa-whatsapp my-float">
+
+    </i>
+    </a>
+
+    <style>
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	/* right:40px; */
+    left: 14px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+    </style>
+    <!-- floating whats app button End-->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="https://kit.fontawesome.com/e191163167.js" crossorigin="anonymous"></script>
+    <!-- Contact Javascript File -->
+    <script src="mail/jqBootstrapValidation.min.js"></script>
+    <script src="mail/contact.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script type="text/javascript">
+    	$(function(){
+    		$('.navbar-nav a').filter(function(){return this.href==location.href}).parent().addClass('active').siblings().removeClass('active')
+    		$('.navbar-nav a').click(function(){
+    			$(this).parent().addClass('active').siblings().removeClass('active')	
+    		})
+    	})
+    	</script>
+        <script src="https://kit.fontawesome.com/e191163167.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+   
+    
+
+    <script>
+        // Get the tracking number from the URL query parameter
+        var urlParams = new URLSearchParams(window.location.search);
+        var trackingNumber = urlParams.get('trackingNumber');
+
+        // Display the tracking information
+        if (trackingNumber) {
+            document.getElementById('trackingInfo').textContent =trackingNumber;
+        } else {
+            // Handle the case where the tracking number is missing or incorrect
+            document.getElementById('trackingInfo').textContent = 'Error: Tracking number is missing or incorrect.';
+        }
+    </script>
+

@@ -27,12 +27,11 @@
 
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-
+    <script src="https://kit.fontawesome.com/e191163167.js" crossorigin="anonymous"></script>
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <!-- <link href="css/theme.css" rel="stylesheet"> -->
 
-	<script type="text/javascript" src="//s.tracktry.com/tracktry/js/button/button.js"></script>
+	<script type="text/javascript" src="js/button.js"></script>
 <script type="text/javascript">
 function TTsizeSet() {
     return {
@@ -43,16 +42,6 @@ function TTsizeSet() {
     };
 }
 </script>
-<script type="text/javascript" src="//s.tracktry.com/tracktry/js/button/button.js"></script>
-<script type="text/javascript">
-function TTsizeSet() {
-    return {
-        //Optional, Specify Single number input size, large or normal, default normal.
-        size:"normal",
-        //Optional, Specify Single number input width, e.g. 400px,75%, default 75%.
-        width:"75%"
-    };
-}
 </script>
 <style>
     /* Style for the hidden content */
@@ -135,22 +124,22 @@ function TTsizeSet() {
                     </div>
                     <a href="contact.html" class="nav-item nav-link">Contact</a>
                     <div>
-                        <div class="dropdown d-none d-lg-block">+
+                        <!-- <div class="dropdown d-none d-lg-block">+
                             <button class="btn bg-soft-warning ms-2" id="dropdownMenuButton1" type="submit" data-bs-toggle="dropdown" aria-expanded="false">
                                 <i class="fas fa-search text-warning">
 
-                                </i>
+                                </i> -->
                             </button>
                             <div class="dropdown-menu dropdown-menu-lg-end p-0 rounded" aria-labelledby="dropdownMenuButton1" style="top:55px">
-                              <form>
+                            <form>
                                 <input class="form-control border-200" type="search" placeholder="Search" aria-label="Search" style="background:#FDF1DF;" />
-                              </form>
+                            </form>
                             </div>
-                          </div>
-                          <form class="d-flex my-3 d-block d-lg-none">
+                        </div>
+                        <form class="d-flex my-3 d-block d-lg-none">
                             <input class="form-control me-2 border-200 bg-light" type="search" placeholder="Search" aria-label="Search" />
                             <button class="btn btn-outline-primary" type="submit">Search</button>
-                          </form>
+                        </form>
                     </div>
                 </div>
                 <a href="" class="btn btn-primary py-2 px-4 d-none d-lg-block">Get A Quote</a>
@@ -169,9 +158,12 @@ function TTsizeSet() {
                         <!-- <a  href="https://www.tracktry.com/t/faster"><button class="btn btn-primary px-3"> Track & Trace</button></a> -->
                         <div id="TTinput" class="TTinput">
                             <div class="TTinput-item">
-                                <input id="TTtracknumber" type="text" value="" name="TTtracknumber" placeholder="Enter your tracking number">
+                                <!-- <input id="TTtracknumber" type="text" value="" name="TTtracknumber" placeholder="Enter your tracking number"> -->
+                                <input id="trackingNumber"  type="text" placeholder="Enter your tracking number">
                             </div>
-                            <button class="TTinput-button" onclick="TTbuttonToTrack()">Track</button>
+                            <!-- <button id="trackingNumber" class="TTinput-button" onclick="TTbuttonToTrack()">Track</button> -->
+                            <button id="trackButton" class="TTinput-button" >Track</button>
+                            <!-- <a class="TTinput-button" href="track.html">Track</a> -->
                         </div>
                     </div>
                 </div>
@@ -180,6 +172,30 @@ function TTsizeSet() {
     </div>
     <!-- Header End -->
 
+    <div id="errorPage" style="display: none;">
+        <p>Error: Tracking number is incorrect or not found.</p>
+    </div>
+
+    <script>
+         document.getElementById('trackButton').addEventListener('click', function() {
+            var trackingNumber = document.getElementById('trackingNumber').value;
+
+            // You can implement your tracking logic here.
+            // For this example, we'll just check if the tracking number is not empty.
+            if (trackingNumber.trim() !== '') {
+                // Tracking is successful, redirect to track.html with the tracking number as a query parameter
+                if (trackingNumber === '2f') {
+                    window.location.href = 'track.html?trackingNumber=' + encodeURIComponent(trackingNumber);
+                } else {
+                    // Redirect to error.html with a query parameter indicating the error
+                    window.location.href = 'error.html?errorMessage=' + encodeURIComponent(" We're unable to fulfill your request Please Make sure that your Tracking Number is typed correctly and try again");
+                }
+            } else {
+                // Redirect to error.html with a query parameter indicating the error
+                window.location.href = 'error.html?errorMessage=' + encodeURIComponent("Tracking number cannot be empty.");
+            }
+        });
+    </script>
 
     <!-- About Start -->
     <div class="container-fluid py-5">
@@ -865,7 +881,7 @@ function TTsizeSet() {
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/counterup/counterup.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
+    <script src="https://kit.fontawesome.com/e191163167.js" crossorigin="anonymous"></script>
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>

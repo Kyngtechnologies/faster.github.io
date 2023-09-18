@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Error</title>
+</head>
+<body >
+    <h1>Error</h1>
+    <h1>Unfortunately, something has gone wrong.</h1>
+    <p id="errorMessage">  
+        <a href="https://api.whatsapp.com/send?phone=9045064293">support team</a>.</p>
+
+        <button id="goBackButton" class="btn btn-3 icon-arrow-left" role=" button ">Back</button>
+
+        
+    
+    <!-- 404 text -->
+    <!--
+    <h1>Unfortunately, this page does not exist.</h1>
+    <p>The link you clicked may be broken or the page may have been removed.</p>
+    -->
+    <script>
+        // Get the error message from the URL query parameter
+        var urlParams = new URLSearchParams(window.location.search);
+        var errorMessage = urlParams.get('errorMessage');
+        var errorMessageElement = document.getElementById('errorMessage');
+        errorMessageElement.textContent = errorMessage;
+
+        // Add an event listener to the "Go Back" button to navigate back to the previous page
+        document.getElementById('goBackButton').addEventListener('click', function() {
+            history.back(); // Navigate back to the previous page
+        });
+    </script>
+    <script src="https://kit.fontawesome.com/e191163167.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
+<style>
+    @mixin lips($num) {
+    @for $i from 1 through $num {
+      &:nth-child(n+#{$i + 1}) {
+      margin-left: #{$i*31px};
+     }
+    }
+  }
+  
+  body {
+    height: 100vh;
+    background-image: radial-gradient(closest-side, #f87d4c, #FF4800);
+    text-align: center;
+    color: #fff;
+    font-family: "Helvetica Neue";
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .logo {
+    margin: 40px auto;
+    display: block;
+  }
+  
+  h1 {
+    font-size: 24px;
+    line-height: 40px;
+    margin: 0 auto 16px;
+    padding: 0 20px;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    max-width: 600px;
+  }
+  
+  p {
+    color: #D6DCE0;
+    font-weight: 300;
+    max-width: 600px;
+    margin: 0 auto 24px;
+    text-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    letter-spacing: 0.5px;
+    padding: 0 20px;
+    a {
+      color: inherit;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+  
+  .button {
+    color: #2EA3F2;
+    background: #fff;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 12px 48px;
+    text-decoration: none;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    transition: all 0.2s ease-out;
+    &:hover {
+      margin-top: -2px;
+      box-shadow: 0 6px 24px rgba(0,0,0,0.4);
+    }
+  }
+  
+  .browser {
+    width: 400px;
+    min-width: 200px;
+    min-height: 264px;
+    background: #FFFFFF;
+    box-shadow: 0 40px 80px 0 rgba(0,0,0,0.25);
+    border-radius: 3px;
+    animation: bobble 1.8s ease-in-out infinite;
+    position: relative;
+    left: 50%;
+    margin-left: -200px;
+    .controls {
+      width: 100%;
+      height: 32px;
+      background: #E8ECEF;
+      border-radius: 3px 3px 0 0;
+      box-sizing: border-box;
+      padding: 10px 12px;
+      i {
+        height: 12px;
+        width: 12px;
+        border-radius: 100%;
+        display: block;
+        float: left;
+        background: #D6DCE0;
+        margin-right: 8px;
+      }
+    }
+  }
+  
+  .eye {
+    position: absolute;
+    left: 34%;
+    top: 80px;
+    width: 32px;
+    height: 32px;
+    opacity: 1;
+    + .eye {
+      right: 34%;
+      left: auto;
+    }
+    &:before, &:after {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 40px;
+      width: 3px;
+      border-radius: 2px;
+      background-color: #FF5E5B;
+    }
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+  
+  .mouth {
+    position: absolute;
+    width: 250px;
+    top: 178px;
+    left: 50%;
+    margin-left: -125px;
+    height: 40px;
+    .lips {
+      position: absolute;
+      left: 15px;
+      content: ' ';
+      height: 40px;
+      width: 3px;
+      border-radius: 2px;
+      background-color: #FF5E5B;
+      transform: rotate(-54deg);
+      &:nth-child(odd) {
+        transform: rotate(54deg);
+      }
+      @include lips(8);
+    }
+  }
+  
+  @keyframes bobble {
+    0%, 100% { 
+      margin-top: 40px; 
+      margin-bottom: 48px;
+      box-shadow: 0 40px 80px rgba(0,0,0,0.24);
+    }
+    50% { 
+      margin-top: 54px; 
+      margin-bottom: 34px;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.40); 
+    }
+  }
+  
+  @media only screen 
+    and (min-device-width: 320px) 
+    and (max-device-width: 480px) {
+      .browser {
+        width: 280px;
+        margin-left: -140px;
+        .eye {
+          left: 30%;
+          + .eye {
+            left: auto;
+            right: 30%;
+          }
+        }
+      }
+  }
+</style>
+
+<style>
+    /* button design */
+
+
+    .btn {
+  border: none;
+  font-family: 'Lato';
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.btn:after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before {
+  font-family: 'FontAwesome';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+/* Icon separator */
+.btn-sep {
+  padding: 25px 60px 25px 120px;
+}
+
+.btn-sep:before {
+  background: rgba(0,0,0,0.15);
+}
+/* Button 3 */
+.btn-3 {
+  background: #e74c3c;
+  color: #fff;
+}
+
+.btn-3:hover {
+  background: #c0392b;
+}
+
+.btn-3:active {
+  background: #c0392b;
+  top: 2px;
+}
+
+.btn-3:before {
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  line-height: 3;
+  font-size: 140%;
+  width: 60px;
+}
+
+/* Button 3 */
+</style>
