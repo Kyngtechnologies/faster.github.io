@@ -9,7 +9,7 @@
     <p id="errorMessage">  
         <a href="https://api.whatsapp.com/send?phone=9045064293">support team</a>.</p>
 
-        <button id="goBackButton" class="btn btn-3 icon-arrow-left" role=" button ">Back</button>
+        <button id="goBackButton" class="btn btn-3" role=" button ">Back</button>
 
         
     
@@ -35,13 +35,6 @@
 
 </html>
 <style>
-    @mixin lips($num) {
-    @for $i from 1 through $num {
-      &:nth-child(n+#{$i + 1}) {
-      margin-left: #{$i*31px};
-     }
-    }
-  }
   
   body {
     height: 100vh;
@@ -177,7 +170,6 @@
       &:nth-child(odd) {
         transform: rotate(54deg);
       }
-      @include lips(8);
     }
   }
   
@@ -247,7 +239,7 @@
 /* Pseudo elements for icons */
 .btn:before {
   font-family: 'FontAwesome';
-  speak: none;
+  /* speak: none; */
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
