@@ -71,9 +71,9 @@ function TTsizeSet() {
         <div class="row py-2 px-lg-5">
             <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center text-white">
-                    <small><i class="fa fa-phone-alt mr-2"></i>+17758644080</small>
+                    <small><i class="fa fa-phone-alt mr-2"></i>+1(829)-281-8889</small>
                     <small class="px-3">|</small>
-                    <small><i class="fa fa-envelope mr-2"></i>support@openLogistics@yahoo.com</small>
+                    <small><i class="fa fa-envelope mr-2"></i>support@openlogistics@.com</small>
                 </div>
             </div>
             <div class="col-lg-6 text-center text-lg-right">
@@ -837,8 +837,8 @@ function TTsizeSet() {
                     <div class="col-md-6 mb-5">
                         <h3 class="text-primary mb-4">Get In Touch</h3>
                         <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York, USA</p>
-                        <p><i class="fa fa-phone-alt mr-2"></i>+17758644080</p>
-                        <p><i class="fa fa-envelope mr-2"></i>support@openlogistics@yahoo.com</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>+1(829)-281-8889</p>
+                        <p><i class="fa fa-envelope mr-2"></i>support@openLogisticsLimited.com</p>
                         <div class="d-flex justify-content-start mt-4">
                             <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
@@ -880,7 +880,7 @@ function TTsizeSet() {
                 <p class="m-0 text-white">Copyright &copy; <a href="#"> Open Logistics</a>. All Rights Reserved. 
 				
 				<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-				 <a href="https://htmlcodex.com"></a>
+				 <a href=""></a>
                 </p>
             </div>
             <div class="col-lg-6 text-center text-md-right">
@@ -905,38 +905,18 @@ function TTsizeSet() {
 
 
         <!-- floating whats app button start-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=9045064293" class="float" target="_blank">
-    <i class="fa fa-whatsapp my-float">
-
-    </i>
-    </a>
-
-    <style>
-
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom:40px;
-	/* right:40px; */
-    left: 14px;
-	background-color:#25d366;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-    font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-    z-index:100;
-}
-
-.my-float{
-	margin-top:16px;
-}
-
-    </style>
+        <div id="myDiv"></div>
+    <script type="text/javascript">
+    $(function () {
+        $('#myDiv').floatingWhatsApp({
+        phone: '18292818889',
+        popupMessage: 'Hello, how can we help you?',
+        showPopup: true
+        });
+    });
+    </script>
     <!-- floating whats app button End-->
-
+   
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary back-to-top"><i class="fa fa-angle-double-up"></i></a>
@@ -954,6 +934,11 @@ function TTsizeSet() {
     <!-- Contact Javascript File -->
     <script src="mail/jqBootstrapValidation.min.js"></script>
     <script src="mail/contact.js"></script>
+
+    <!-- Whatsapp floating button -->
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="js/floating-wpp.min.js"></script>
+<link rel="stylesheet" href="css/floating-wpp.min.css">
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
